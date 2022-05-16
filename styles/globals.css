@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 a {
@@ -13,4 +13,92 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+nav {
+  padding: 19px 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-links-div {
+  display: flex;
+  align-items: center;
+}
+
+ul,
+.buttons-Container {
+  display: flex;
+}
+
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 5px 13px;
+}
+
+ul li a {
+  color: #343434;
+  cursor: pointer;
+}
+
+.links {
+  display: block;
+}
+
+.noStyleButton {
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: 0;
+  padding: 12px 16px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.borderStyleButton {
+  display: block;
+  border: 1px solid #5856ce;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #5856ce;
+  background-color: transparent;
+  padding: 12px 16px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.backgroundColorButton {
+  display: block;
+  background-color: #5856ce;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border: 1px solid #5856ce;
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px 16px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.aboutUsSection {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 720px) {
+  .links,
+  .noStyleButton,
+  .borderStyleButton {
+    display: none;
+  }
+
+  nav {
+    padding: 8px 16px;
+  }
 }

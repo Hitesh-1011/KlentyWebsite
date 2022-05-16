@@ -1,0 +1,8 @@
+export default {
+    default:{
+        primaryTextColor:"#120155",
+        secondaryTextColor:"#ffffff",
+        accentColor1:"#5856CE",
+        accentColor2:"#343434"
+    }
+}
