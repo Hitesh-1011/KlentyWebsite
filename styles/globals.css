@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  min-width: 320px;
 }
 
 a {
@@ -71,6 +72,17 @@ ul li a {
   cursor: pointer;
 }
 
+.borderStyleButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 2px;
+  transition: all 0.2s ease;
+}
+
+.borderStyleButton:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 1px;
+}
+
 .backgroundColorButton {
   display: block;
   background-color: #5856ce;
@@ -103,7 +115,8 @@ ul li a {
 }
 
 .aboutUsSection,
-.crmSectionDiv {
+.crmSectionDiv,
+.clientsSection {
   padding: 0 20px;
   max-width: 1200px;
   margin: auto;
@@ -125,13 +138,13 @@ ul li a {
   font-size: 46px;
   line-height: 60px;
   margin-bottom: 24px;
-  font-family: "", sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
 .purpleText {
   display: block;
   color: #5856ce;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Paytone One", sans-serif;
 }
 
 .headSectionContent p {
@@ -147,7 +160,8 @@ ul li a {
   );
 }
 
-.crmSectionDiv {
+.crmSectionDiv,
+.clientsSection {
   padding: 40px 20px;
 }
 
@@ -156,8 +170,11 @@ ul li a {
   margin-bottom: 72px;
 }
 
-.crmheaderSection h1 {
+.crmheaderSection h1,
+.clientsSectionHeader h1 {
+  font-family: "Paytone One", sans-serif;
   font-size: 40px;
+  text-align: center;
   margin: 0 0 18px 0;
 }
 
@@ -183,14 +200,79 @@ ul li a {
   height: 346px;
 }
 
-.clientDetailsDiv img::after {
-  border-right: 2px solid #343434;
+.clientDetailsDiv {
+  display: flex;
+  align-items: center;
+}
+
+.clientCard h2 {
+  margin: 0 10px 20px 10px;
+  max-width: 520px;
+}
+
+.clientLogoDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  border-right: 1px solid #343434;
+}
+
+.clientNamePlace p {
+  margin: 0;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.clientlogo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.clientCard {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.arrowStyle {
+  background-color: #ebf6ff;
+  width: fit-content;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.iconStyle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5856ce;
+}
+
+.buttonTransparent {
+  border: 0;
+  padding: 10px 14px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
   .headText {
     font-size: 32px !important;
     line-height: 48px !important;
+  }
+  .clientsSectionHeader h1 {
+    font-size: 20px;
+  }
+  .clientCard h2 {
+    font-size: 20px;
+  }
+  .crmheaderSection h1 {
+    font-size: 30px;
+  }
+  .cardDesign {
+    height: fit-content !important;
   }
 }
 
@@ -207,6 +289,18 @@ ul li a {
 
   .aboutUsSection {
     flex-direction: column;
+  }
+
+  .clientsSectionHeader {
+    text-align: center;
+  }
+
+  .clientCard {
+    flex-direction: column-reverse;
+  }
+
+  .clientDetailsDiv {
+    justify-content: center;
   }
 }
 
